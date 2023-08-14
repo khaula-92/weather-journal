@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Journal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <img src="cloudy-day.png" alt="" height="64">
+    <h1>Weather Journal</h1>
+    <form id="journalForm">
+        <label for="zipCode">Enter Zip Code:</label>
+        <input type="text" id="zipCode" name="zip_code" required placeholder="enter zip code here">
+        <label for="feelings">How are you feeling?</label>
+        <textarea id="feelings" name="feel" required placeholder="Write your feelings here..."></textarea>
+    
+        <button type="submit" id="generate">Generate</button>
+    </form>
+
+    <div id="entryHolder">
+        <div id="date">
+            <span style="opacity: 0.5">Please fill in the fields above...</span>
+        </div>
+        <div id="temp"></div>
+        <div id="content"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
